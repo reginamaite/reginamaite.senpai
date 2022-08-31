@@ -4,108 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Proyecto I</title>
-
-    <style>
-        *{
-            margin: 0;
-        }
-        body{
-            width: 100vw;
-
-        }
-
-        nav{
-            width: 90vw;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #upNav {
-            width: 100%;
-            justify-self: flex-start;
-            display: flex;
-        }
-
-        .upNavDivs {
-            width: 5%;
-            justify-items: center;
-            font-size: small;
-        }
-
-        #upNavLeft {
-            width: 10vw;
-        }
-
-        #imageUp {
-            width: 100%;
-            height: 100%;
-        }
-
-        #buttonNav {
-            border-radius: 15%;
-            background-color: blueviolet;
-            border-color: blueviolet;
-            color: white;
-        }
-
-        #containerHeader {
-            width: 100vw;
-            position: absolute;
-            display: inline-block;
-            text-align: center;
-        }
-
-        #phraseHeader, h1 {
-            position:fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        h1 {
-            top: 20%;
-        }
-
-        header{
-            width: 100vw;
-        }
-        #hands{
-            width: 100%;
-        }
-
-        @media (width:390px) and (height:844px)  {
-            
-        }
-
-    </style>
 </head>
 <body>
     <nav>
-        <div id="upNavLeft">
+        <div id="logo">
             <img src="/Materiales/logo.png" id="imageUp"/>
         </div>
 
         <div id="upNav">
-            <div class="upNavDivs">Nosotros</div>
-            <div class="upNavDivs">Noticias</div>
-            <div class="upNavDivs">Ayuda</div>
+            <li class="upNavDivs">Nosotros</li>
+            <li class="upNavDivs">Noticias</li>
+            <li class="upNavDivs">Ayuda</li>
         </div>
 
-        <div id="upNavRight">
+        <div id="button">
             <button id="buttonNav">INGRESAR</button>
         </div>
 
     </nav>
     <header>
         <div id="containerHeader">
-            <img src="/Materiales/manos.jpg" id="hands"/>
             <h1>¡Actúa para cambiar el mundo!</h1>
             <p id="phraseHeader">Fomentámos el vínculo entre las empresas y organizaciones civiles para generar un<br>
                 impacto positivo en la sociedad.<br>
                 Descubrí diferentes maneras de involucrar tu organización con la sociedad.</p>
-            
         </div>
 
     </header>
+
+    <section id="aboutUs">
+            <div class="us1" id="usImage"> 
+                <!--- Imagen del section-->
+            </div>
+
+            <div class="us2">
+                <h2>Soluciones para empresas</h2>
+                <p>Generamos un medio para que las empresas se involucren en <br>
+                    actividades de responsabilidad social. <br>
+                    ¡Creá un grupo de voluntariados en tu organización y se parte del <br>
+                    cambio!
+                </p>
+            </div>   
+
+            <div class="us3" id="usImage2"> 
+                <!--- Imagen del section-->
+            </div>
+
+            <div class="us4">
+                <h2>Soluciones para organizaciones</h2>
+                <p>Apoyamos a las organizaciones sociales para que alcancen sus <br>
+                objetivos. Ponemos a su disposición una comunidad de voluntariados <br>
+                dispuestos a apoyarlas en sus necesidades. <br>
+                Equipos de voluntariados por empresas dispuestos a potenciar tu <br>
+                impacto en la sociedad.</p>
+            </div> 
+    </section>
+
+    <section id="oportunity">
+        <div>
+            <h3>Encuentra las mejores oportunidades</h3>
+            <p>La plataforma cuenta con gran variedad de proyectos locales
+                (sociales, educativos y medioambientales), donde <br>
+                encontrarás el que mejor se adapte a la experiencia que estas buscando. <br>
+                Te ayudamos en la coordinación con la organización de forma simple y rápida.
+            </p>
+        </div>
+        <div id="container">
+            <div class="shape" id="color1">
+                <img class="icons size" src="/Materiales/icono-mano.png" alt="">
+                <img class="plusIcon" src="/Materiales/icono-mas.png" alt="">
+                <span>Ser voluntario</span>
+            </div>
+
+            <div class="shape" id="color2">
+                <img class="icons size" id="sizeIcon" src="/Materiales/icono-mano-corazon.png" alt="">
+                <img class="plusIcon" src="/Materiales/icono-mas.png" alt="">
+                <span>Donar</span>
+            </div>
+
+            <div class="shape" id="color3">
+                <img class="icons" src="/Materiales/icono-reciclar.png" alt="">
+                <img class="plusIcon" src="/Materiales/icono-mas.png" alt="">
+                <span>Reciclar</span>
+            </div>
+            
+            <div class="shape" id="color4">
+                <img class="icons" src="/Materiales/icono-maletin.png" alt="">
+                <img class="plusIcon" src="/Materiales/icono-mas.png" alt="">
+                <span>Llamados laborales</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrusel">
+        <h3>Noticias</h3>
+        <p>ver todo</p>
+            <div class="allContent">
+                <img class="mini" src="/Materiales/oficina.png" alt="">
+                <div class="date">
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-calendario.png" alt="">
+                        <p>10/08/2021</p>
+                    </div>
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-reloj.png" alt="">
+                        <p>4 min</p>
+                    </div>
+                </div>
+                <h4>Fundapes abre nuevo centro</h4>
+                <p>El nuevo centro está ubicado dentro del predio municipal...
+                    etc etc etc</p>
+            </div>
+    </section>
 </body>
+
+<!-- https://www.youtube.com/watch?v=2CEptqw-bSQ carrusel-->

@@ -34,7 +34,7 @@ li{
 }
 
 .upNavDivs {
-    width: 5%;
+    width: 50px;
     justify-items: center;
     font-size: small;
     flex-direction: row ;
@@ -47,7 +47,7 @@ li{
 }
 
 #imageUp{
-    width: 100%;
+    width:120px;
 }
     
 #button{
@@ -60,7 +60,7 @@ li{
     width: 100%;
     height: 100%;
     padding: 10px;
-    border-radius: 0.25rem;
+    border-radius: 1.25rem;
     background-color: blueviolet;
     border-color: blueviolet;
     color: white;
@@ -73,19 +73,18 @@ li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
+
 
 h1 {
     top: 40%;
 }
 
-#containerHeader{
-    color: white;
-}
 
 header{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     background-image: url(/Materiales/manos.jpg);
     background-position: center;
     background-size: cover;
@@ -94,7 +93,7 @@ header{
 header #containerHeader{
     background-color: #00000060;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
 
 #aboutUs{
@@ -204,7 +203,9 @@ h3{
 .plusIcon{
     width: 15px;
     height: 15px;
-
+    position: relative;
+    bottom: 80px;
+    left: 150px;
 }
 
 .icons{
@@ -226,6 +227,47 @@ h3{
 
 span{
     color: white;
+}
+
+
+.carrusel{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#17a2b8;
+}
+ 
+.allContent{
+    width: 18%;
+    height: 70%;
+    border: solid black 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mini{
+    width: 100%;
+    height: 40%;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
 }
 
 @media (width:390px) and (height:844px)  {
