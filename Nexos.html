@@ -27,6 +27,7 @@
         </div>
 
     </nav>
+
     <header>
         <div id="containerHeader">
             <h1>¡Actúa para cambiar el mundo!</h1>
@@ -65,7 +66,7 @@
             </div> 
     </section>
 
-    <section id="oportunity">
+    <section class="oportunity">
         <div>
             <h3>Encuentra las mejores oportunidades</h3>
             <p>La plataforma cuenta con gran variedad de proyectos locales
@@ -102,10 +103,18 @@
     </section>
 
     <section class="carrusel">
-        <h3>Noticias</h3>
-        <p>ver todo</p>
+        <div class="news">
+            <h3 class="newsTitle">Noticias</h3>
+            <p>ver todo</p>
+        </div>
+
+        <div class="carruselNews">
             <div class="allContent">
-                <img class="mini" src="/Materiales/oficina.png" alt="">
+                <div class="imageCarrusel">
+                    <img class="mini" src="/Materiales/oficina.png" alt="">
+                    <span class="chip">ANIMALES</span>
+                </div>
+
                 <div class="date">
                     <div class="calendar">
                         <img class="icon" src="/Materiales/icono-calendario.png" alt="">
@@ -116,11 +125,101 @@
                         <p>4 min</p>
                     </div>
                 </div>
-                <h4>Fundapes abre nuevo centro</h4>
-                <p>El nuevo centro está ubicado dentro del predio municipal...
+
+                <div class="infoCarrusel">   
+                    <h4>Fundapes abre nuevo centro</h4>
+                    <p>El nuevo centro está ubicado dentro del predio municipal...
                     etc etc etc</p>
+                </div>
             </div>
+
+            <div class="allContent">
+                <div class="imageCarrusel">
+                    <img class="mini" src="/Materiales/oficina.png" alt="">
+                    <span class="chip">ANIMALES</span>
+                </div>
+
+                <div class="date">
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-calendario.png" alt="">
+                        <p>10/08/2021</p>
+                    </div>
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-reloj.png" alt="">
+                        <p>4 min</p>
+                    </div>
+                </div>
+
+                <div class="infoCarrusel">   
+                    <h4>Fundapes abre nuevo centro</h4>
+                    <p>El nuevo centro está ubicado dentro del predio municipal...
+                    etc etc etc</p>
+                </div>
+            </div>
+
+            <div class="allContent">
+                <div class="imageCarrusel">
+                    <img class="mini" src="/Materiales/oficina.png" alt="">
+                    <span class="chip">ANIMALES</span>
+                </div>
+
+                <div class="date">
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-calendario.png" alt="">
+                        <p>10/08/2021</p>
+                    </div>
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-reloj.png" alt="">
+                        <p>4 min</p>
+                    </div>
+                </div>
+
+                <div class="infoCarrusel">   
+                    <h4>Fundapes abre nuevo centro</h4>
+                    <p>El nuevo centro está ubicado dentro del predio municipal...
+                    etc etc etc</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="final">
+        <div class="finalLeft">
+            <img src="/Materiales/laptop-escritorio.jpg" id="imageFinal"/>
+        </div>
+        <div class="finalRight">
+            <h3 id="contactTitle">Contacto</h3>
+            <form id="contactForm">
+                <div id="inputsDivs">
+                    <span style="color: black;">Celular</span>
+                    <input type="text" id="phone" placeholder="099999999" style="border-radius: 0.25rem;">
+                    <span style="color: black;">Email</span>
+                    <input type="email" id="email" placeholder="name@example.com" style="border-radius: 0.25rem;">
+                </div>
+                <div id="inputText">
+                    <span style="color: black;">Mensaje</span>
+                    <textarea name="textarea" rows="8" cols="30" style="border-radius: 0.25rem;"></textarea>
+                </div>
+                <div id="inputButton">
+                    <button id="buttonForm">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+</section>
+
+
+    <footer>
+        <div class="footerLogo">
+            <img id="whiteLogo" src="/Materiales/logo-blanco.png" alt="">
+        </div>
+        <ul>
+            <li>Nosotros</li>
+            <li>Noticias</li>
+            <li>Contacto</li>
+            <li>Términos y condiciones</li>
+        </ul>
+        
+    </footer>
 </body>
 
 <!-- https://www.youtube.com/watch?v=2CEptqw-bSQ carrusel-->

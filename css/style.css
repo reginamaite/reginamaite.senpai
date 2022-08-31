@@ -4,6 +4,8 @@
 
 
 body{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'DM Sans', sans-serif;
@@ -28,8 +30,6 @@ nav{
 }
 
 li{
-    padding: 4px;
-    margin: 9px;
     list-style: none;
 }
 
@@ -38,6 +38,8 @@ li{
     justify-items: center;
     font-size: small;
     flex-direction: row ;
+    padding: 4px;
+    margin: 9px;
 }
 
 #logo {
@@ -99,7 +101,7 @@ header #containerHeader{
 #aboutUs{
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     grid-template-areas:"up up up up"
                         "left center1 center2 right"
                         "left center3 center4 right"
@@ -108,6 +110,7 @@ header #containerHeader{
     grid-template-columns: 10% 40% 40% 10%;
     gap: 5px;
     background-color: #5298ff;
+    padding: 50px;
     
 }
 
@@ -153,12 +156,13 @@ h2{
     margin-left: 5%;
 }
 
-#oportunity{
+.oportunity{
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    padding: 50px;
     text-align: center;
 }
 h3{
@@ -238,24 +242,65 @@ span{
     align-items: center;
     background-color:#17a2b8;
 }
- 
-.allContent{
-    width: 18%;
-    height: 70%;
-    border: solid black 5px;
+
+.carruselNews{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.news{
+    color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.newsTitle{
+    margin: 0px;
+}
+
+ 
+.allContent{
+    width: 220px;
+    height: 350px;
+    border-radius: 0.50rem;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
     background-color: white;
+    font-size: 0.75rem;
 }
 
 .date{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 15px 10px 0px 10px;
 }
+
+.imageCarrusel{
+    width: 220px;
+    height: 150px;
+}
+
+.chip{
+    color: white;
+    background-color: #5298ff;
+    border-radius: 1rem;
+    position: relative;
+    top: -30px;
+    margin: 10px;
+    padding: 0 10px 0 10px;
+    font-size: 0.70rem;
+}
+
 .mini{
     width: 100%;
-    height: 40%;
+    height: 100%;
+    border-radius: 0.50rem;
+    object-fit: cover;
 }
 
 .calendar{
@@ -266,8 +311,96 @@ span{
 }
 
 .icon{
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
+    margin: 0px 5px 0px 0px;
+}
+
+.infoCarrusel{
+    margin: 10px;
+}
+h4{
+    margin-bottom: 15px;
+}
+
+footer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #5298ff;
+    display: flex;
+}
+
+.footerLogo{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+.whiteLogo{
+    object-fit: contain;
+
+}
+
+#buttonForm {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 1.25rem;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
+}
+
+#inputButton {
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+#final {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:"levelUp levelUp levelUp levelUp"
+                        "middleLeft middleCenter1 middleCenter2 middleRight"
+                        "levelDown levelDown levelDown levelDown";
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 10% 40% 40% 10%;
+    gap: 5px;
+}
+
+.finalLeft {
+    grid-area: middleCenter1;
+}
+
+.finalRight {
+    grid-area: middleCenter2;
+    text-align: center;
+}
+
+#imageFinal {
+    width: 100%;
+    height: 100%;
+}
+
+#contactTitle {
+    margin-top: 0;
+}
+
+#inputsDivs {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    text-align: left;
+}
+
+#inputText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#contactForm {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (width:390px) and (height:844px)  {
