@@ -97,7 +97,7 @@ header #containerHeader{
     height: 60vh;
 }
 
-section {
+#aboutUs{
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -124,7 +124,6 @@ section {
 .us2{
     grid-area: center2;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: justify;
@@ -142,17 +141,38 @@ section {
 .us4{
     grid-area: center3;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
     font-size: 0.90rem;
     color: white;
 }
 
-h2{
+#oportunity{
+    grid-template-areas: ;
+}
+
+#container{
+   
+}
+.shape{
+   
+}
+#color1{
+    background-color: #dc3545;
 
 }
+#color2{
+    background-color: #ff9c07;
+}
+
+#color3{
+    background-color: #28a745;
+}
+#color4{
+    background-color: #17a2b8;
+}
+
 
 @media (width:390px) and (height:844px)  {
     
