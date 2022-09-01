@@ -5,7 +5,7 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    /*min-height: 100%;*/
     display: flex;
     flex-direction: column;
     font-family: 'DM Sans', sans-serif;
@@ -17,6 +17,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
     
 }
 
@@ -94,21 +95,20 @@ header{
 
 header #containerHeader{
     background-color: #00000060;
-    width: 100%;
+    width: 100vw;
     height: 70vh;
 }
 
 #aboutUs{
     display: grid;
     width: 100vw;
-    height: 70vh;
     grid-template-areas:"up up up up"
                         "left center1 center2 right"
                         "left center3 center4 right"
                         "bottom bottom bottom bottom";
     grid-template-rows: 10% 40% 40% 10%;
     grid-template-columns: 10% 40% 40% 10%;
-    gap: 5px;
+    gap: 3px;
     background-color: #5298ff;
     padding: 50px;
     
@@ -123,7 +123,7 @@ h2{
     background-image: url(/Materiales/oficina.png);
     background-position:center;
     background-size:cover;
-    margin: 2%;
+   
 }
 
 .us2{
@@ -132,9 +132,9 @@ h2{
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    font-size: 0.95rem;
+    font-size: 1.025rem;
     color: white;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .us3{
@@ -142,7 +142,7 @@ h2{
     background-image: url(/Materiales/voluntariado.jpg);
     background-position: center;
     background-size: cover;
-    margin: 2%;
+    
 }
 
 .us4{
@@ -151,13 +151,17 @@ h2{
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    font-size: 0.90rem;
+    font-size: 1.025rem;
     color: white;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
+.usImage{
+    width: 40vw;
+    height: 40vh;
+    margin: 15px;
+}
 .oportunity{
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,6 +174,9 @@ h3{
     font-size: 2rem;
 }
 
+.description{
+    font-size: 1rem;
+}
 #container{
    margin:30px ;
    display: flex;
@@ -178,8 +185,8 @@ h3{
 }
 
 .shape{
-   width: 200px;
-   height: 150px;
+   width: 250px;
+   height: 200px;
    border-radius: 1rem;
    display: flex;
    flex-direction: column;
@@ -205,28 +212,28 @@ h3{
 }
 
 .plusIcon{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: relative;
-    bottom: 80px;
-    left: 150px;
+    bottom: 100px;
+    left: 180px;
 }
 
 .icons{
     display: flex;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin: 10%;
 }
 .size{
-    width: 35px;
-    height: 60px;
+    width: 40px;
+    height: 65px;
 }
 
 #sizeIcon{
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 60px;
 }
 
 span{
@@ -236,15 +243,17 @@ span{
 
 .carrusel{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color:#17a2b8;
 }
 
 .carruselNews{
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 20px;
 }
@@ -263,8 +272,8 @@ span{
 
  
 .allContent{
-    width: 220px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     border-radius: 0.50rem;
     display: flex;
     align-content: space-around;
@@ -281,8 +290,8 @@ span{
 }
 
 .imageCarrusel{
-    width: 220px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
 }
 
 .chip{
@@ -323,23 +332,6 @@ h4{
     margin-bottom: 15px;
 }
 
-footer{
-    width: 100vw;
-    height: 100vh;
-    background-color: #5298ff;
-    display: flex;
-}
-
-.footerLogo{
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-}
-.whiteLogo{
-    object-fit: contain;
-
-}
-
 #buttonForm {
     width: 100%;
     height: 100%;
@@ -355,10 +347,15 @@ footer{
     margin-left: 40%;
 }
 
-#final {
+
+#final{
+    display: flex;
+    flex-direction: row;
+}
+/*#final {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     grid-template-areas:"levelUp levelUp levelUp levelUp"
                         "middleLeft middleCenter1 middleCenter2 middleRight"
                         "levelDown levelDown levelDown levelDown";
@@ -370,15 +367,18 @@ footer{
 .finalLeft {
     grid-area: middleCenter1;
 }
-
-.finalRight {
-    grid-area: middleCenter2;
-    text-align: center;
+*/
+.finalLeft {
+    
 }
 
+
+
 #imageFinal {
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    width: 100vh;
+    height: 50vh;
 }
 
 #contactTitle {
@@ -401,6 +401,25 @@ footer{
 #contactForm {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+
+
+footer{
+    width: 100vw;
+    background-color: #5298ff;
+    display: flex;
+    min-height: 5vh;
+}
+
+.footerLogo{
+    width: 250px;
+    margin: 10px;
+}
+.whiteLogo{
+    object-fit: contain;
+
 }
 
 @media (width:390px) and (height:844px)  {
