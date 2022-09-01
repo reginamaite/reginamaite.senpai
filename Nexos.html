@@ -12,32 +12,32 @@
 </head>
 <body>
     <nav>
-        <div id="logo">
-            <img src="/Materiales/logo.png" id="imageUp"/>
+        <div class="logo">
+            <img src="/Materiales/logo.png" class="imageUp"/>
         </div>
 
-        <div id="upNav">
+        <div class="upNav">
             <li class="upNavDivs">Nosotros</li>
             <li class="upNavDivs">Noticias</li>
             <li class="upNavDivs">Ayuda</li>
         </div>
 
-        <div id="button">
-            <button id="buttonNav">INGRESAR</button>
+        <div class="button">
+            <button class="buttonNav">INGRESAR</button>
         </div>
 
     </nav>
 
     <header>
-        <div id="containerHeader">
+        <div class="containerHeader">
             <h1>¡Actúa para cambiar el mundo!</h1>
-            <p id="phraseHeader">Fomentámos el vínculo entre las empresas y organizaciones civiles para generar un<br>
+            <p class="phraseHeader">Fomentámos el vínculo entre las empresas y organizaciones civiles para generar un<br>
                 impacto positivo en la sociedad.<br>
                 Descubrí diferentes maneras de involucrar tu organización con la sociedad.</p>
         </div>
     </header>
 
-    <section id="aboutUs">
+    <section class="aboutUs">
             <div class="us1 usImage"> 
                 <!--- Imagen del section-->
             </div>
@@ -74,7 +74,7 @@
                 Te ayudamos en la coordinación con la organización de forma simple y rápida.
             </p>
         </div>
-        <div id="container">
+        <div class="container">
             <div class="shape" id="color1">
                 <img class="icons size" src="/Materiales/icono-mano.png" alt="">
                 <img class="plusIcon" src="/Materiales/icono-mas.png" alt="">
@@ -182,35 +182,33 @@
         </div>
     </section>
 
-    <section id="final">
+    <section class="final">
 
         <div class="finalLeft">
             <img src="/Materiales/laptop-escritorio.jpg" id="imageFinal"/>
         </div>
         
         <div class="finalRight">
-            <h3 id="contactTitle">Contacto</h3>
-
-            <form id="contactForm">
-                <div id="inputsDivs">
-                    <span style="color: black;">Celular</span>
-                    <input type="text" id="phone" placeholder="099999999" style="border-radius: 0.25rem;">
-                    <span style="color: black;">Email</span>
-                    <input type="email" id="email" placeholder="name@example.com" style="border-radius: 0.25rem;">
-                </div>
-
-                <div id="inputText">
-                    <span style="color: black;">Mensaje</span>
-                    <textarea name="textarea" rows="8" cols="30" style="border-radius: 0.25rem;"></textarea>
-                </div>
-                
-                <div id="inputButton">
-                    <button id="buttonForm">ENVIAR</button>
-                </div>
-            </form>
+            <h4 id="contactTitle">Contacto</h4>
             
+            <div class="contact">
+                <div class="firstData">
+                    <form id="contactForm">
+                        <label for="fname">Nombre</label>
+                        <input type="text" class="input" id="name" placeholder="Ingrese su nombre">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="input" id="email" placeholder="name@example.com">
+                    </form>
+                </div>
+
+                <div class="inputText">
+                    <label for="message">Mensaje</label>
+                    <textarea name="textarea"></textarea>
+                </div>
+            </div>   
+            <button id="buttonForm">ENVIAR</button>
         </div>
-</section>
+    </section>
 
 
     <footer>
