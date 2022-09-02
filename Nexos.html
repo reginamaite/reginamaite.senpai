@@ -135,7 +135,7 @@
             <div class="allContent">
                 <div class="imageCarrusel">
                     <img class="mini" src="/Materiales/oficina.png" alt="">
-                    <span class="chip">ANIMALES</span>
+                    <span class="chip">URUGUAY</span>
                 </div>
 
                 <div class="date">
@@ -150,7 +150,7 @@
                 </div>
 
                 <div class="infoCarrusel">   
-                    <h4>Fundapes abre nuevo centro</h4>
+                    <h4>DIRCTTV y TECHO inauguraron un espacio deportivo</h4>
                     <p>El nuevo centro está ubicado dentro del predio municipal...
                     etc etc etc</p>
                 </div>
@@ -159,7 +159,7 @@
             <div class="allContent">
                 <div class="imageCarrusel">
                     <img class="mini" src="/Materiales/oficina.png" alt="">
-                    <span class="chip">ANIMALES</span>
+                    <span class="chip">VOLUNARIADO</span>
                 </div>
 
                 <div class="date">
@@ -169,12 +169,36 @@
                     </div>
                     <div class="calendar">
                         <img class="icon" src="/Materiales/icono-reloj.png" alt="">
-                        <p>4 min</p>
+                        <p>3 min</p>
                     </div>
                 </div>
 
                 <div class="infoCarrusel">   
-                    <h4>Fundapes abre nuevo centro</h4>
+                    <h4>Jornada de voluntarios</h4>
+                    <p>El nuevo centro está ubicado dentro del predio municipal...
+                    etc etc etc</p>
+                </div>
+            </div>
+
+            <div class="allContent">
+                <div class="imageCarrusel">
+                    <img class="mini" src="/Materiales/oficina.png" alt="">
+                    <span class="chip">URUGUAY</span>
+                </div>
+
+                <div class="date">
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-calendario.png" alt="">
+                        <p>10/08/2021</p>
+                    </div>
+                    <div class="calendar">
+                        <img class="icon" src="/Materiales/icono-reloj.png" alt="">
+                        <p>5 min</p>
+                    </div>
+                </div>
+
+                <div class="infoCarrusel">   
+                    <h4>Lanzamiento del plan Tu Techo</h4>
                     <p>El nuevo centro está ubicado dentro del predio municipal...
                     etc etc etc</p>
                 </div>
@@ -212,17 +236,87 @@
 
 
     <footer>
-        <div class="footerLogo">
-            <img id="whiteLogo" src="/Materiales/logo-blanco.png" alt="">
-        </div>
-        <ul>
-            <li>Nosotros</li>
-            <li>Noticias</li>
-            <li>Contacto</li>
-            <li>Términos y condiciones</li>
-        </ul>
-        
-    </footer>
-</body>
 
+        <div class="ending">
+            <div class="footerLogo">
+                <img id="whiteLogo" src="/Materiales/logo-blanco.png" alt="">
+            </div>
+
+            <ul class="footerList">
+                <li>Nosotros</li>
+                <li>Noticias</li>
+                <li>Contacto</li>
+                <li>Términos y condiciones</li>
+            </ul>
+        </div>
+
+        <div class="socialMedia">
+            <p>Seguinos!</p>
+            <div class="socialMediaLogos">
+                <img class="minis" src="/Materiales/facebook-logo.png" alt="">
+                <img class="minis" src="/Materiales/twitter-logo.png" alt="">
+                <img class="minis" src="/Materiales/Instagram-logo.png" alt="">
+            </div>
+        </div>    
+    </footer>
+
+    <!-- MODAL -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-close">
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="first">
+                <img src="Materiales/imagen-modal.JPG" class="imageModalBig">
+            </div>
+
+            <div class="second">
+                <div class="register">
+                    <h3 class="titleModal">REGISTRAR</h3>
+                </div>
+
+                <div class="order">
+                    <div class="picOrg" id="maletinModal">
+                        <img src="Materiales/icono-maletin.png" class="imageModal">
+                    </div>
+
+                    <div class="empyorg">
+                        <h3 class="titleModal" id="enterpriseModal">MI EMPRESA</h3>
+                        <p class="pModal">Breve explicación a lo que nos<br>
+                            referimos</p>
+                    </div>
+            </div>
+
+            <div class="order">
+                <div class="picOrg" id="personModal">
+                    <img src="Materiales/icono-persona.png" class="imageModal">
+                </div>
+
+                <div class="empyorg">
+                    <h3 class="titleModal" id="organizationModal">MI ORGANIZACIÓN</h3>
+                    <p class="pModal">Estamos para ayudarlos<br>
+                            a tener éxito</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // MODAL //
+        var btn = document.getElementById("buttonNav");
+        var modal = document.getElementById("myModal");
+        var equis = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        equis.onclick = function(){
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
 <!-- https://www.youtube.com/watch?v=2CEptqw-bSQ carrusel-->
