@@ -34,6 +34,11 @@ li{
     list-style: none;
 }
 
+.linkNav{
+    text-decoration: none;
+    color: black;
+}
+
 .upNavDivs {
     width: 50px;
     justify-items: center;
@@ -59,7 +64,7 @@ li{
     padding: 10px;
 }
 
-.buttonNav {
+#buttonNav {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -415,6 +420,7 @@ footer{
     flex-direction: row;
     padding: 25px;
     color: white;
+    border: black solid 2px;
 }
 
 .ending{
@@ -457,7 +463,7 @@ footer{
 
 .modal-content {
     display: grid;
-    width: 100%;
+    width: 80%;
     height: 100%;
     grid-template-areas:"left up"
                         "left right";
@@ -468,7 +474,6 @@ footer{
     background-color: #fefefe;
     margin: 15% auto;
     border: 1px solid #888;
-    width: 80%;
     overflow: hidden;
 }
 
@@ -494,7 +499,9 @@ footer{
     grid-template-columns: 20% 80%;
     gap: 5px;
     border-radius: 2rem;
-    box-shadow: gray 6px 6px;
+    box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
+    -webkit-box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
+    -moz-box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
     overflow: hidden;
     margin: 5%;
 }
@@ -504,7 +511,7 @@ footer{
     font-size: 40px;
     font-weight: bold;
     float: right;
-    margin-right: 20%;
+    margin-right: 5%;
 }
 .close:hover, .close:focus {
     color: #000;
