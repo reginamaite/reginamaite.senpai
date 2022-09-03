@@ -279,21 +279,19 @@ span{
     background-color: white;
     font-size: 0.75rem;
     transition: 5s;
-    translate: -107%;
+    translate: 0%;
 }
 .news{
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 .newsTitle{
     margin: 0px;
 }
-
- 
 
 
 .date{
@@ -319,9 +317,17 @@ span{
     font-size: 0.70rem;
 }
 
+.more{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin: 10px;
+    color: rgb(104, 104, 104);
+    display: none;
+}
 .mini{
     width: 100%;
-    height: 100%;
+    height: 250px;
     border-radius: 0.50rem;
     object-fit: cover;
 }
@@ -341,10 +347,13 @@ span{
 
 .infoCarrusel{
     margin: 10px;
+    font-size: 1rem;
+    color: rgb(79, 79, 79);
 }
 
 h4{
     margin-bottom: 15px;
+    color: black;
 }
  
 .dotsUl{
@@ -361,6 +370,7 @@ h4{
     height: 20px;
     margin: 5px;
     background-color: rgb(173, 173, 173);
+    border-color: rgb(173, 173, 173);
     justify-items: center;
     border-radius: 3rem;
     }
@@ -609,7 +619,7 @@ footer{
 
 @media (min-width:390px) and (min-height:844px)  {
     body{
-        width: 100vw;
+        width: 75vw;
         display: flex;
         flex-direction: column;
         font-family: 'DM Sans';
@@ -710,6 +720,251 @@ footer{
     .phraseHeader{
         font-size: 0.75rem;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .finalLeft{
+        display: block;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .aboutUs{
+        display: grid;
+        grid-template-areas:"center1"
+                            "center2"
+                            "center4"
+                            "center3";
+        grid-template-rows: 15% 35% 15% 35%;
+        grid-template-columns: 93%;
+        gap: 3px;
+        background-color: #5298ff;
+        padding: 50px;
+        width: 100%;
+        height: 900px;
+        
+    }
+
+    .usImage{
+        width: 100%;
+        height: 100%;
+    }
+
+    .us2{
+        grid-area: center2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.025rem;
+        color: white;
+        margin-top: 15%;
+    }
+
+    .us4{
+        grid-area: center3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.025rem;
+        color: white;
+        margin-top: 30%;
+    }
+
+    .oportunity{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .carrusel {
+        display: none;
+    }
+
+    .final {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        height: 85%;
+        }
 
 
+    .finalRight {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 40px;
+        color: white;
+        border: black solid 2px;
+        width: 80vw;
+    }
+
+    .inputText {
+        display: none;
+    }
+
+    #whiteLogo{
+        width: 95px;
+        height: 20px;
     
+    }
+
+    .footerList{
+        font-size: 0.75rem;
+        margin-left:0%;
+    }
+    .socialMedia{
+        font-size: 0.75rem;
+    }
+
+    .socialMediaLogos{
+        width: 60px;
+    }
+
+    .minis{
+        width: 15px;
+        height: 15px;
+    }
+
+    .imageModal {
+        display: none;
+    }
+    
+    .imageModalBig {
+        display: none;
+    }
+
+    .modal-content {
+        display: grid;
+        width: 80%;
+        height: 100%;
+        grid-template-areas:"left up"
+                            "left right";
+        grid-template-rows: 5% 95%;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+        border-radius: 2rem;
+        background-color: #fefefe;
+        margin: 15% auto;
+        border: 1px solid #888;
+        overflow: hidden;
+    }
+    
+    .second {
+        grid-area: right;
+        width: 80%;
+        height: 35%;
+    }
+    
+    .order {
+        display: grid;
+        width: 100%;
+        height: 50%;
+        grid-template-areas:"left"
+                            "right";
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+        border-radius: 2rem;
+        box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
+        -webkit-box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
+        -moz-box-shadow: 10px 10px 25px -2px rgba(162,162,162,0.75);
+        overflow: hidden;
+        margin: 5%;
+    }
+    
+    .close {
+        color: #aaa;
+        font-size: 40px;
+        font-weight: bold;
+        float: right;
+        margin-right: 5%;
+    }
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-close {
+        grid-area: up;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .picOrg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imageModal {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .imageModalBig {
+        height: 500px;
+        width: 500px;
+    }
+    
+    .register {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .empyorg {
+        margin: 0;
+    }
+    
+    .titleModal {
+        font-size: x-large;
+        margin: 5%;
+        margin-bottom: 0;
+    }
+    
+    .pModal {
+        margin: 6%;
+        margin-top: 2%;
+        font-size: small;
+    }
+    
+    #maletinModal {
+        background-color: #17a2b8;
+    }
+    
+    #enterpriseModal {
+        color: #17a2b8;
+    }
+    
+    #personModal {
+        background-color: #7749f8;
+    }
+    
+    #organizationModal {
+        color: #7749f8;
+    }
+ }
